@@ -9,7 +9,7 @@ import {
 	Hero,
 	Menu,
 	Navbar,
-} from './components';
+} from './components/ui';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
