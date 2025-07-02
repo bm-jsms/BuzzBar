@@ -27,7 +27,7 @@ const Navbar = () => {
 	}, []);
 	return (
 		<nav>
-			<div>
+			<div className='md:px-10'>
 				<a href='#home' className='flex items-center gap-2'>
 					<p>BuzzBar</p>
 					<img src='/images/logo.png' alt='logo' width='50' height='50' />
