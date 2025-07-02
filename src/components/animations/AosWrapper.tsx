@@ -7,6 +7,7 @@ export const AOSInit = () => {
 		AOS.init({
 			once: false,
 			duration: 800,
+			offset: 100,
 		});
 	}, []);
 
