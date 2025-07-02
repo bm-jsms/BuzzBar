@@ -10,12 +10,15 @@ import {
 	Menu,
 	Navbar,
 } from './components/ui';
+import { AOSInit } from './components/animations';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
 	return (
 		<main>
+			<AOSInit />
+
 			<Navbar />
 			<Hero />
 			<Cocktails />
