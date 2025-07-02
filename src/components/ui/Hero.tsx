@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { SplitText } from 'gsap/all';
 import { useRef } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import { AOSDiv } from '../animations';
 
 const Hero = () => {
 	const videoRef = useRef<HTMLVideoElement>(null);
@@ -74,7 +75,9 @@ const Hero = () => {
 	return (
 		<>
 			<section id='hero' className='noisy'>
-				<h1 className='title'>BUZZBAR</h1>
+				<AOSDiv data-aos='zoom-in'>
+					<h1 className='title'>BUZZBAR</h1>
+				</AOSDiv>
 
 				<img
 					src='/images/hero-left-leaf.png'
