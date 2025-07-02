@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 import { SplitText } from 'gsap/all';
 import { useGSAP } from '@gsap/react';
+import { AOSDiv } from '../animations';
 
 const About = () => {
 	useGSAP(() => {
@@ -48,51 +49,53 @@ const About = () => {
 					</div>
 
 					<div className='sub-content'>
-						<p>
-							Every cocktail we serve is a reflection of our obsession with
-							detail — from the first muddle to the final garnish. That care is
-							what turns a simple drink into something truly memorable.
-						</p>
+						<AOSDiv data-aos='flip-right'>
+							<p>
+								Every cocktail we serve is a reflection of our obsession with
+								detail — from the first muddle to the final garnish. That care
+								is what turns a simple drink into something truly memorable.
+							</p>
+						</AOSDiv>
 
-						<div>
+						<AOSDiv data-aos='flip-up'>
 							<p className='md:text-3xl text-xl font-bold'>
 								<span>4.5</span>/5
 							</p>
 							<p className='text-sm text-white-100'>
 								More than +12000 customers
 							</p>
-						</div>
+						</AOSDiv>
 					</div>
 				</div>
 			</div>
 
 			<div className='top-grid'>
-				<div className='md:col-span-3'>
+				<AOSDiv data-aos='flip-right' className='md:col-span-3'>
 					<div className='noisy' />
 					<img src='/images/abt1.png' alt='grid-img-1' />
-				</div>
+				</AOSDiv>
 
-				<div className='md:col-span-6'>
+				<AOSDiv data-aos='flip-right' className='md:col-span-6'>
 					<div className='noisy' />
 					<img src='/images/abt2.png' alt='grid-img-2' />
-				</div>
+				</AOSDiv>
 
-				<div className='md:col-span-3'>
+				<AOSDiv data-aos='flip-right' className='md:col-span-3'>
 					<div className='noisy' />
 					<img src='/images/abt5.png' alt='grid-img-5' />
-				</div>
+				</AOSDiv>
 			</div>
 
 			<div className='bottom-grid'>
-				<div className='md:col-span-8'>
+				<AOSDiv data-aos='flip-right' className='md:col-span-8'>
 					<div className='noisy' />
 					<img src='/images/abt3.png' alt='grid-img-3' />
-				</div>
+				</AOSDiv>
 
-				<div className='md:col-span-4'>
+				<AOSDiv data-aos='flip-right' className='md:col-span-4'>
 					<div className='noisy' />
 					<img src='/images/abt4.png' alt='grid-img-4' />
-				</div>
+				</AOSDiv>
 			</div>
 		</div>
 	);
