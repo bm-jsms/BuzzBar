@@ -2,6 +2,7 @@ import gsap from 'gsap';
 import { useMediaQuery } from 'react-responsive';
 import { useGSAP } from '@gsap/react';
 import { featureLists, goodLists } from '../../constants/index';
+import { AOSDiv } from '../animations';
 
 const Art = () => {
 	const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -39,10 +40,14 @@ const Art = () => {
 				<div className='content'>
 					<ul className='space-y-4 will-fade'>
 						{goodLists.map((feature, index) => (
-							<li key={index} className='flex items-center gap-2'>
+							<AOSDiv
+								data-aos='zoom-in'
+								key={index}
+								className='flex items-center gap-2'
+							>
 								<img src='/images/check.png' alt='check' />
 								<p>{feature}</p>
-							</li>
+							</AOSDiv>
 						))}
 					</ul>
 
@@ -56,23 +61,27 @@ const Art = () => {
 
 					<ul className='space-y-4 will-fade'>
 						{featureLists.map((feature, index) => (
-							<li key={index} className='flex items-center justify-start gap-2'>
+							<AOSDiv
+								data-aos='zoom-in'
+								key={index}
+								className='flex items-center justify-start gap-2'
+							>
 								<img src='/images/check.png' alt='check' />
 								<p className='md:w-fit w-60'>{feature}</p>
-							</li>
+							</AOSDiv>
 						))}
 					</ul>
 				</div>
 
 				<div className='masked-container'>
 					<h2 className='will-fade'>Sip-Worthy Perfection</h2>
-					<div id='masked-content'>
+					<AOSDiv data-aos='zoom-in' id='masked-content'>
 						<h3>Made with Craft, Poured with Passion</h3>
 						<p>
 							This isn’t just a drink. It’s a carefully crafted moment made just
 							for you.
 						</p>
-					</div>
+					</AOSDiv>
 				</div>
 			</div>
 		</div>
